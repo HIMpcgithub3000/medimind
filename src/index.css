@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  ::selection {
+    @apply bg-teal-100 text-teal-900;
+  }
+}
+
+/* thin teal scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #9fe1cb #f5f4f0;
+}
+
+.dark * {
+  scrollbar-color: #085041 #04342c;
+}
